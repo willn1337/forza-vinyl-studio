@@ -5,6 +5,91 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <Platforms>x64</Platforms>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <ApplicationIcon>Resources\Icons\jerry.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+	  <Resource Include="Resources\Cursors\**">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+	  <Resource Include="Resources\Images\**">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Resource>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Resources\Vinyls\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Icons\arrow-return-180-left.png" />
+	  <None Remove="Resources\Icons\arrow-return.png" />
+	  <None Remove="Resources\Icons\clipboard-paste-document-text.png" />
+	  <None Remove="Resources\Icons\cross-small.png" />
+	  <None Remove="Resources\Icons\cross-white.png" />
+	  <None Remove="Resources\Icons\cross.png" />
+	  <None Remove="Resources\Icons\cursor.png" />
+	  <None Remove="Resources\Icons\folder-horizontal.png" />
+	  <None Remove="Resources\Icons\hand.png" />
+	  <None Remove="Resources\Icons\layer-flip-vertical.png" />
+	  <None Remove="Resources\Icons\layer-flip.png" />
+	  <None Remove="Resources\Icons\layer-mask.png" />
+	  <None Remove="Resources\Icons\layer-rotate-left.png" />
+	  <None Remove="Resources\Icons\layer-rotate.png" />
+	  <None Remove="Resources\Icons\layer-shape-polygon.png" />
+	  <None Remove="Resources\Icons\layer-shape-text.png" />
+	  <None Remove="Resources\Icons\layer-shape.png" />
+	  <None Remove="Resources\Icons\magnifier-left.png" />
+	  <None Remove="Resources\Icons\minus.png" />
+	  <None Remove="Resources\Icons\notebooks.png" />
+	  <None Remove="Resources\Icons\pipette.png" />
+	  <None Remove="Resources\Icons\scissors-blue.png" />
+	  <None Remove="Resources\Icons\selection-select.png" />
+	  <None Remove="Resources\Icons\star-empty.png" />
+	  <None Remove="Resources\Icons\star-small-empty.png" />
+	  <None Remove="Resources\Icons\star-small.png" />
+	  <None Remove="Resources\Icons\star.png" />
+	  <None Remove="Resources\Icons\tick-button.png" />
+	  <None Remove="Resources\Icons\tick-white.png" />
+	  <None Remove="Resources\Icons\toggle-expand.png" />
+	  <None Remove="Resources\Icons\toggle.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Resources\Icons\jerry.ico" />
+	</ItemGroup>
+	
+	<ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="OpenTK.GLWpfControl" Version="4.2.2" />
+    <PackageReference Include="SkiaSharp.Views.WPF" Version="2.88.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="SplashScreen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
 
 </Project>

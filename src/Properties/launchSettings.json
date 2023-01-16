@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ForzaVinylStudio": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "commandLineArgs": "-Open \"D:\\!Root\\Torrented Stuff\\fh5\\forza-painter\\!downloads\\leonor#7281 - fptg - 24 layers.json"
+    }
+  }
+}
