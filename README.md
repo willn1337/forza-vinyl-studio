@@ -1,6 +1,8 @@
 # Forza Vinyl Studio
 
-**Currently very early in development! This is not in a usable state yet.** However, you can check out my (slow) progress here: <https://trello.com/b/ZPCD6ELp/forza-vinyl-studio>
+**PROJECT PAUSED INDEFINITELY. Due to real life happenings I may not be able to work on this for at least a year or more. Sorry for any disapointment. Feel free to clone the project, reuse code, etc if you want to.**
+
+~~**Currently very early in development! This is not in a usable state yet.** However, you can check out my (slow) progress here: <https://trello.com/b/ZPCD6ELp/forza-vinyl-studio>~~
 
 ![Screenshot of the user interface as of 17/01/2023](imgs/screenshot.png)
 
